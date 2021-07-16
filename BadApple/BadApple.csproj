@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="xcopy &quot;$(ProjectDir)data&quot; &quot;$(ProjectDir)bin\$(ConfigurationName)\netcoreapp3.1&quot;" />
+    <Exec Command="xcopy /Y &quot;$(ProjectDir)data&quot; &quot;$(ProjectDir)bin\$(ConfigurationName)\netcoreapp3.1&quot;" />
   </Target>
 
 </Project>
