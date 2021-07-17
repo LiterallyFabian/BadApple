@@ -40,6 +40,7 @@ namespace BadApple
             Bitmap sourceBitmap = new Bitmap(48, 48);
             using (Graphics g = Graphics.FromImage(sourceBitmap)) g.DrawImage(new Bitmap(source), 0, 0, 48, 48);
 
+            //array with bitmaps of the image in different transparency levels (sources[39] = 0.39 transparency)
             Bitmap[] sources = new Bitmap[101];
             string[] files = Directory.GetFiles("frames", "*.jpg");
             int done = 0;
@@ -55,9 +56,9 @@ namespace BadApple
 
                 using (Graphics g = Graphics.FromImage(newFrame))
                 {
-                    for (int y = 0; y < newFrame.Height; y += 48)
+                    for (int y = 0; y < frame.Height; y += 48)
                     {
-                        for (int x = 0; x < newFrame.Width; x += 48)
+                        for (int x = 0; x < frame.Width; x += 48)
                         {
                             //crop area and get avg color
                             Rectangle area = new Rectangle(new Point(x, y), new Size(48, 48));
