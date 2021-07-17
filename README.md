@@ -7,6 +7,7 @@ Automatically replaces the black areas in [Bad Apple](https://www.youtube.com/wa
 **Video input**: [bad apple.mp4](https://github.com/LiterallyFabian/BadApple/blob/master/BadApple/data/bad%20apple.mp4)
 
 **Image input**: [mei.png](https://github.com/LiterallyFabian/BadApple/blob/master/BadApple/data/mei.png)
+
 ![Mei](https://raw.githubusercontent.com/LiterallyFabian/BadApple/master/BadApple/data/mei.png)
 
 **Result**: [output.mp4](https://youtu.be/ZmkqWF03Wl4)
