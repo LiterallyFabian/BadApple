@@ -49,10 +49,8 @@ namespace BadApple
                 if (File.Exists(newPath)) continue;
                 Bitmap frame = new Bitmap(path);
 
-                //create black bitmap
+                //create bitmap
                 Bitmap newFrame = new Bitmap(frame.Width, frame.Height);
-                Graphics gr = Graphics.FromImage(newFrame);
-                gr.Clear(Color.Black);
 
                 using (Graphics g = Graphics.FromImage(newFrame))
                 {
