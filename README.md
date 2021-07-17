@@ -1,7 +1,7 @@
 # BadApple
 
 Automatically replaces the black areas in [Bad Apple](https://www.youtube.com/watch?v=FtutLA63Cp8) with a selected image.
-![Example](https://i.imgur.com/iESs1zj.jpeg)
+
 ## Example
 
 **Video input**: [bad apple.mp4](https://github.com/LiterallyFabian/BadApple/blob/master/BadApple/data/bad%20apple.mp4)
