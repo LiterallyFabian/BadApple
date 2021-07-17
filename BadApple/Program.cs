@@ -53,6 +53,8 @@ namespace BadApple
 
                 //create bitmap
                 Bitmap newFrame = new Bitmap(frame.Width, frame.Height);
+                Graphics gr = Graphics.FromImage(newFrame);
+                gr.Clear(Color.White);
 
                 using (Graphics g = Graphics.FromImage(newFrame))
                 {
