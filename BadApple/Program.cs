@@ -87,7 +87,7 @@ namespace BadApple
                 }
             }
             Console.WriteLine("Processed all frames. Generating audio.");
-            Process processAudio = Process.Start("CMD.exe", $"/C ffmpeg -i {video} -y output/audio.mp3");
+            Process processAudio = Process.Start("CMD.exe", $"/C ffmpeg -i \"{video}\" -y output/audio.mp3");
             processAudio.WaitForExit();
 
             Console.WriteLine("Generating video.");
