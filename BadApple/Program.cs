@@ -12,13 +12,13 @@ namespace BadApple
             {
                 Console.Write("Video path: ");
                 string cmd = $"/C ffmpeg -i \"{Console.ReadLine()}\" -r 15/1 frames/%01d.jpg";
-                Process.Start("CMD.exe", cmd);
+                Process p = Process.Start("CMD.exe", cmd);
+                p.WaitForExit();
             }
             else
             {
                 Console.WriteLine("Using already found frames.");
             }
-
 
         }
 
