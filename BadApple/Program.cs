@@ -41,9 +41,10 @@ namespace BadApple
             using (Graphics g = Graphics.FromImage(sourceBitmap)) g.DrawImage(new Bitmap(source), 0, 0, 48, 48);
 
             Bitmap[] sources = new Bitmap[101];
-
+            string[] files = Directory.GetFiles("frames", "*.jpg");
+            int done = 0;
             //generate frames
-            foreach (string path in Directory.GetFiles("frames", "*.jpg"))
+            foreach (string path in files)
             {
                 string newPath = path.Replace("frames", "output");
                 if (File.Exists(newPath)) continue;
@@ -79,7 +80,7 @@ namespace BadApple
                     }
                     Directory.CreateDirectory(Path.GetDirectoryName(newPath));
                     newFrame.Save(newPath, ImageFormat.Jpeg);
-                    Console.WriteLine($"{path} created.");
+                    Console.WriteLine($"{path} created. ({++done}/{files.Length})");
                 }
             }
             Console.WriteLine("Processed all frames. Generating audio.");
