@@ -14,6 +14,11 @@ Automatically replaces the black areas in [Bad Apple](https://www.youtube.com/wa
 
 ## Usage
 
+#### Prerequisites
+
+- A Windows enviroment 
+- FFmpeg
+
 - Download the [source code](https://github.com/LiterallyFabian/BadApple/archive/refs/tags/1.0.zip) or the [pre-built binaries](https://github.com/LiterallyFabian/BadApple/releases). 
 
 - Run the BadApple.exe executable or build the program from Visual Studio and enter the path of the video you want to generate. `debug.mp4` is a 15 sec version of `bad apple.mp4`, both included in the project.
